@@ -13,9 +13,9 @@ source:
   sha256: e1dec23e3913a82e2c79e76313911db9050fb82711a0da227f94fc6df2d3aea6
 
 build:
+  noarch: generic
   merge_build_host: True  # [win]
-  number: 1
-  skip: true  # [win32]
+  number: 1001
   rpaths:
     - lib/R/lib/
     - lib/
@@ -41,8 +41,7 @@ about:
   summary: The tensor product of two arrays is notionally an outer product of the arrays collapsed
     in specific extents by summing along the appropriate diagonals.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
