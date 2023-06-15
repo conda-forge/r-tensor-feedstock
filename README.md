@@ -1,11 +1,11 @@
-About r-tensor
-==============
+About r-tensor-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-tensor-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=tensor
 
 Package license: GPL (>= 2)
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-tensor-feedstock/blob/main/LICENSE.txt)
 
 Summary: The tensor product of two arrays is notionally an outer product of the arrays collapsed in specific extents by summing along the appropriate diagonals.
 
