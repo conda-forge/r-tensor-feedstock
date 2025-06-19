@@ -1,4 +1,4 @@
-{% set version = '1.5' %}
+{% set version = "1.5.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,11 +9,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tensor_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tensor/tensor_{{ version }}.tar.gz
-  sha256: e1dec23e3913a82e2c79e76313911db9050fb82711a0da227f94fc6df2d3aea6
+  sha256: 6edb07024eaaadec1f83694f5012c2355aced3e589c2c3c659021b5f03168b58
 
 build:
   noarch: generic
-  number: 1006
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -34,8 +34,7 @@ test:
 about:
   home: https://CRAN.R-project.org/package=tensor
   license: GPL (>= 2)
-  summary: The tensor product of two arrays is notionally an outer product of the arrays collapsed
-    in specific extents by summing along the appropriate diagonals.
+  summary: The tensor product of two arrays is notionally an outer product of the arrays collapsed in specific extents by summing along the appropriate diagonals.
   license_family: GPL3
   license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
